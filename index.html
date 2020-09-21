@@ -137,66 +137,28 @@
     <!-- Showcase -->
     <section id="intro" class="showcase pt-1 pb-5">
         <div class="container">
-            <div class="card-dark text-center">
+            <div class="col-md-6 card-dark text-center">
                 <h2>Hello,</h2>
                 <p>
                     My name is Seungwon Lim
                 </p>
                 <a href="#" class="btn btn-fill">Read More</a>
             </div>
-            <div class="FAQ">
-                <!-- Frequently asked questions -->
-                <h4>Frequently Asked Questions</h4>
-                <section class="faq">
-                    <div class="container">
-                        <ul>
-                            <li>
-                                <button class="btn-open">
-                                    Q1<a class="fas fa-plus"></a>
-                                </button>
-                                <div class="faq-item close">
-                                    A
-                                </div>
-                            </li>
-                            <li>
-                                <button class="btn-open">
-                                    Q2<a class="fas fa-plus"></a>
-                                </button>
-                                <div class="faq-item close">
-                                    A
-                                </div>
-                            </li>
-                            <li>
-                                <button class="btn-open">
-                                    Q3<a class="fas fa-plus"></a>
-                                </button>
-                                <div class="faq-item close">
-                                    A
-                                    <br /><br />
-                                </div>
-                            </li>
-                            <li>
-                                <button class="btn-open">
-                                    Q4<a class="fas fa-plus"></a>
-                                </button>
-                                <div class="faq-item close">
-                                    A
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
+            <div class="col-md-6 profile-picture">
+                <img class="col-md-6" src="img/IMG_3031.PNG" alt="">
             </div>
-        </div>
+    </section>
+    </div>
+    </div>
 
-        </div>
+    </div>
     </section>
 
     <footer class="footer pt-5">
         <div class="inner_footer text-center">
-            <div class="row container bulletpoints border-bottom">
+            <div class="row container bulletpoints border-bottom justify-content-center">
                 <!-- Contact Info -->
-                <div class="contact col-md-5 col-md-offset-1">
+                <div class="contact col-md-3">
                     <h4 class="text-center mb-3">Contact</h4>
                     <div class="d-flex justify-content-center">
                         <ul>
@@ -208,32 +170,39 @@
                             <li><a href="https://linkedin.com/in/seungwon-lim" class="fab fa-linkedin pr-1">
                                     seungwon-lim</a></li>
                             <li><a href="www.linkedin.com/in/seungwon-lim" class="fab fa-skype pr-1"> seungwon</a></li>
-
                         </ul>
                     </div>
                 </div>
                 <!-- Contact Form -->
-                <div class="col-md-6 col-md-offset-1">
+                <div class="col-md-4">
                     <h4 class="mb-3">OR shoot me a message!</h4>
 
                     <form class="form-wrapper" action="POST" data-netlify="true">
                         <div class="form-name">
-                            <!-- <label for="fname">First Name</label> -->
                             <input type="text" id="fname" name="fname" placeholder="First Name" />
-                            <!-- <label for="fname">Last Name</label> -->
                             <input type="text" name="lname" id="lname" placeholder="Last Name" />
                         </div>
                         <div class="form-contact">
-                            <!-- <label for="email">E-mail</label> -->
                             <input type="email" name="email" id="email" placeholder="E-mail" />
+                            <!-- Choose file -->
+                            <!-- <input class="fileSelector" type="file" name="file" id="file" placeholder="Choose File" /> -->
                         </div>
                         <div class="form-message">
-                            <!-- <label for="message">Message</label> -->
                             <textarea name="message" id="message" placeholder="Message"></textarea>
                         </div>
-                        <input class="mt-4" value="Send Message" type="submit">
-                    </form>
 
+                        <input class="fileSelector" type="file" name="file" id="file" placeholder="Choose File" />
+                        <input class="btn btn-send" value="Send Message" type="submit">
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <div style="background-color:azur; width:100%; height:100%; padding:1.5rem 0.5rem">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt aperiam suscipit,
+                            aspernatur eligendi aliquid fugit natus id. Ducimus veniam dolore minus autem necessitatibus
+                            dolorem magnam, reiciendis similique tempora eveniet nulla modi porro rem harum at
+                            aspernatur blanditiis ullam cupiditate enim est sint facere assumenda impedit. Odio quas
+                            excepturi error sapiente.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -250,7 +219,6 @@
         crossorigin="anonymous"></script>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <script src="app.js"></script>
-
     </body>
 
 </html>

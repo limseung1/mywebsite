@@ -252,6 +252,7 @@
     color: #fdfdfd;
     transition:0.5s
   }
+
   
   #selection .border-line {
     border-bottom: 0.15rem solid var(--primary-color);
@@ -270,7 +271,7 @@
   }
   
   .selection {
-    text-align: center;
+    text-align: center; 
     padding: 2rem 0;
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -279,22 +280,31 @@
   }
   
   .bg-educ{
-      background-image: url("Education.jpg") 
+      background-image: url("img/Education.jpg");
       background-repeat: no-repeat;
-      /* background-attachment: fixed; */
       background-size: cover;
+      box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.7);
   }
-  
+
   .bg-exp{
-      background-image: url("Education.jpg");
+      background-image: url("img/Experience.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
   }
   
   .bg-tech{
-      background-image: url("Education.jpg");
+      background-image: url("img/Technology.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
   }
   
   .bg-certs{
-      background-image: url("Education.jpg");
+      background-image: url("img/Achievement.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
   }
 
 
@@ -537,23 +547,29 @@
   /* Contact Form */
 
 .form-wrapper{
-    background-color:rgba(20, 20, 20, 0.692);
-    padding: 1.5rem 1.5rem;
+    background-color:rgba(50, 50, 50, 0.692);
+    padding: 2rem 2rem;
     width:100%;
     border-radius: 5px;
     text-align: left;
     display: grid;
     grid-template-rows: 1fr 1fr 2fr;
+    margin-bottom:2rem;
 }
 
 .form-wrapper .form-name{
     display:grid;
     grid-template-columns:1fr 1fr ;
     grid-gap:1.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
-
-.form-wrapper input{
+.form-wrapper .form-contact{
+    display:grid;
+    grid-template-columns:1fr 1fr ;
+    grid-gap:1.5rem;
+    margin-bottom: 1rem;
+}
+.form-wrapper input:nth-child(-n+3){
     border: none;
     color: white;
     background:transparent; 
@@ -562,6 +578,8 @@
     padding: 0.25rem;
     border-radius: 5px;
 }
+
+
 .form-wrapper .form-message textarea{
     height:100%;
     width: 100%;
@@ -572,3 +590,39 @@
     padding: 0.25rem;
     border-radius: 5px;
 }
+
+.btn-send{
+  background-color:var(--secondary-color);
+  padding: 0.2rem 1.8rem;
+  border-radius: 5px;
+  margin:1.5rem 0rem 0rem 0rem;
+  opacity: 0.85;
+}
+.btn-send:hover{
+  color: #f4f4f4;
+  transition: 0.3s;
+  opacity: 1;
+}
+
+.btn-attach{
+  width:50%;
+}
+
+input[name="file"] {
+  width: 100%;
+  background-color: #333333;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  font-size: 8pt;
+  background-color: #5b9de9;
+}
+
+
+/* .fileSelector{
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+} */
