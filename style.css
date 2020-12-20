@@ -21,7 +21,7 @@
   }
   p {
     margin: 2rem 0;
-    line-height: 1.8rem;
+    line-height: 1.5rem;
   }
   a {
     text-decoration: none !important;
@@ -40,6 +40,9 @@
     color: var(--text-dark);
   }
   
+  li{
+    margin: 0.5rem 0;
+  }
   /* Utility */
   /* ──────────────────────────────────────────────────────────────────────────────── */
   .appear-bar{
@@ -150,7 +153,10 @@
     transition: 0.7s;
   }
   
-  
+  .li-bullet{
+    list-style: circle;
+    margin: 0.2rem 0;
+  }
   
   /* Navigator*/
   /* ──────────────────────────────────────────────────────────────────────────────── */
@@ -272,9 +278,7 @@
   
   .selection {
     text-align: center; 
-    padding: 2rem 0;
     display: grid;
-    grid-template-rows: 1fr 1fr;
     align-items: center;
     height: 100%;
   }
@@ -522,13 +526,13 @@
   
   
   /* Education Card */
-  .selection-table {
+  .education-table {
     width: 50%;
     justify-self: center;
   }
   .institution {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
     margin:0.5rem 0;
   }
   
@@ -540,8 +544,28 @@
   .right-table {
     text-align: left;
     background-color: #141414;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 1.5rem;
+
   }
+
+
+/* Work Experience Card */
+ .experience-table {
+  width: 70%;
+  justify-self: center;
+}
+.exp-style {
+  font-size: 0.9rem;
+}
+.experience-table .institution{
+  grid-template-columns: 1fr 5fr;
+}
+
+.experience-table .institution p{
+  margin: 0.5rem;
+}
+
+
 
 
   /* Contact Form */
