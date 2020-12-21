@@ -156,6 +156,7 @@
   .li-bullet{
     list-style: circle;
     margin: 0.2rem 0;
+    text-align: justify;
   }
   
   /* Navigator*/
@@ -284,31 +285,31 @@
   }
   
   .bg-educ{
-      background-image: url("img/Education.jpg");
+      background-image: url("https://images.unsplash.com/photo-1603857365671-93cd96dc1df8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80");
       background-repeat: no-repeat;
       background-size: cover;
-      box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.7);
+      box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
   }
 
   .bg-exp{
       background-image: url("img/Experience.jpg");
       background-repeat: no-repeat;
       background-size: cover;
-      box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
+      box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
   }
   
   .bg-tech{
-      background-image: url("img/Technology.jpg");
+      background-image: url("https://images.unsplash.com/photo-1573219925012-6c5e60dbe3ce?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
       background-repeat: no-repeat;
       background-size: cover;
-      box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
+      box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
   }
   
   .bg-certs{
       background-image: url("img/Achievement.jpg");
       background-repeat: no-repeat;
       background-size: cover;
-      box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
+      box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
   }
 
 
@@ -533,18 +534,19 @@
   .institution {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    margin:0.5rem 0;
+    margin:0.8rem 0;
   }
   
   .left-table {
     background-color: #121212;
-    padding: 1.5rem 1rem;
+    padding: 2rem 2rem;
     border-left: #0d77ce 5px solid;
   }
   .right-table {
     text-align: left;
     background-color: #141414;
-    padding: 1.5rem 1.5rem;
+    opacity: 0.9;
+    padding: 2rem 2rem;
 
   }
 
@@ -565,8 +567,47 @@
   margin: 0.5rem;
 }
 
+/* Skill Table */
+.skill-table{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-self: center;
+  justify-content: center;
+  width: 60%;
+  grid-gap: 1.2rem;
+}
 
+.skill{
+  text-align: left;
+  background-color: #141414;
+  opacity: 0.9;
+  height: 260px;
+  padding: 2rem 2rem;
+}
 
+.logo-python{
+  height: 2rem;
+  width: 7rem;
+}
+.logo-r{
+  height: 2rem;
+  width: 2rem;
+}
+.logo-postgresql{
+  height: 2rem;
+  width: 2rem;
+}
+.logo-js{
+  height: 2rem;
+  width: 7rem;
+}
+
+.logo-vba{
+  height: 2rem;
+  width: 2rem;
+}
 
   /* Contact Form */
 
@@ -638,15 +679,5 @@ input[name="file"] {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   font-size: 8pt;
-  background-color: #5b9de9;
 }
 
-
-/* .fileSelector{
-  width: 0.1px;
-  height: 0.1px;
-  opacity: 0;
-  overflow: hidden;
-  position: absolute;
-  z-index: -1;
-} */
