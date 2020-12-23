@@ -343,7 +343,11 @@
     min-height: 100%
   }
   
-  /* Section: Testimonial + Projects*/
+  .about{
+    text-align: left;
+
+  }
+
   /* ──────────────────────────────────────────────────────────────────────────────── */
   #reference {
     background-color:#b8b8b8;
