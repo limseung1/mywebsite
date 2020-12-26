@@ -768,8 +768,11 @@ input[name="file"] {
 }
 
 @media(max-width:500px){
+  #intro .container .card-dark h2{
+    font-size: 1.2rem
+  }
   .navbar{
-    padding: 1rem 0;
+    padding: 0.5rem 0;
   }
   .logo a{
     font-size: 1.2rem;
