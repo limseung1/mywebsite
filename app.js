@@ -59,7 +59,7 @@ function addSelection() {
 // Slider Functions
 function slideopen(summaryContainer) {
     setBorder(0.15, "#0d77ce");
-    summaryContainer.style.height = `75vh`;
+    summaryContainer.style.height = `80vh`;
 }
 function slideclose(summaryContainer) {
     setBorder(0.15, "var(--primary-color");
