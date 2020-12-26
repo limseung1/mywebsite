@@ -768,7 +768,12 @@ input[name="file"] {
 }
 
 @media(max-width:500px){
-
+  .navbar{
+    padding: 1rem 0;
+  }
+  .logo a{
+    font-size: 1.2rem;
+  }
   /* Education */
   .education-table{
     width:43vh;
