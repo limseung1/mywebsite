@@ -748,8 +748,7 @@ input[name="file"] {
   /* MEDIA QUERY */
   /* ──────────────────────────────────────────────────────────────────────────────── */
   
-@media(max-width:1000px){
-  /* Media Query : NavBar */
+@media(max-width:1100px){
   .navbar .container .m-left, .m-right{
     display: none;
   }
@@ -768,6 +767,9 @@ input[name="file"] {
 }
 
 @media(max-width:500px){
+  .show-selection .container .border-line {
+    overflow-y: scroll;
+}
   #intro .container .card-dark h2{
     font-size: 1.2rem
   }
