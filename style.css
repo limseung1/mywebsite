@@ -748,76 +748,119 @@ input[name="file"] {
   /* MEDIA QUERY */
   /* ──────────────────────────────────────────────────────────────────────────────── */
   
-  @media(max-width:1000px){
-    /* Media Query : NavBar */
-    .navbar .container .m-left, .m-right{
-      display: none;
-    }
-    .navbar .container {
-      display: flex;
-    }
+@media(max-width:1000px){
+  /* Media Query : NavBar */
+  .navbar .container .m-left, .m-right{
+    display: none;
   }
-  @media(max-width:900px){
-    .showcase{
-      height: 800px;
-      font-size: 0.8rem;
-    }
-    .showcase .container {
-      grid-template-columns: 1fr !important;
-    }
+  .navbar .container {
+    display: flex;
   }
-  
-  @media(max-width:500px){
-
-    /* Education */
-    .education-table{
-      width:43vh;
-      font-size: 0.6rem;
-
-    }
-    .left-table{
-      padding:0.8rem;
-    }
-    .right-table{
-      padding:0.8rem;
-    }
-    .left-table h6{
-      font-size:0.7rem;
-    }
-    .right-table h5{
-      font-size:0.8rem;
-    }
-
-
-    /* Experience */
-    .experience-table{
-      width:43vh;
-      font-size: 0.6rem;
-    }
-    .experience-table .institution{
-      grid-template-areas: "b b"
-                           "b b"
-                           "a a";
-    }
-
-    .experience-table .institution p{
-      font-size:0.5rem;
-    }
-
-    .experience-table .institution .left-table{
-      grid-area: a;
-    }
-    .experience-table .institution .right-table{
-      grid-area: b;
-    }
-
-    .li-bullet{
-      font-size: 0.7rem;
-    }
+}
+@media(max-width:900px){
+  .showcase{
+    height: 800px;
+    font-size: 0.8rem;
   }
-   /* Software Skills */
-   .skill-table {
+  .showcase .container {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media(max-width:500px){
+
+  /* Education */
+  .education-table{
+    width:43vh;
+    font-size: 0.6rem;
+
+  }
+  .left-table{
+    padding:0.8rem;
+  }
+  .right-table{
+    padding:0.8rem;
+  }
+  .left-table h6{
+    font-size:0.7rem;
+  }
+  .right-table h5{
+    font-size:0.8rem;
+  }
+
+
+  /* Experience */
+  .experience-table{
+    width:43vh;
+    font-size: 0.6rem;
+  }
+  .experience-table .institution{
+    grid-template-areas: "b b"
+                          "b b"
+                          "a a";
+  }
+
+  .experience-table .institution p{
+    font-size:0.5rem;
+  }
+
+  .experience-table .institution .left-table{
+    grid-area: a;
+  }
+  .experience-table .institution .right-table{
+    grid-area: b;
+  }
+
+  .li-bullet{
+    font-size: 0.7rem;
+  }
+
+
+  /* Software Skills */
+  .skill{
+    height:8rem;
+    padding: 1rem 1rem;
+    margin: 0.8rem 0rem;
+  }
+  .skill h4{
+  font-size:0.9rem;
+  }
+  .skill ul{
+    columns: 2;
+  }
+  .skill ul li{
+    display: inline-block;
+    font-size:0.7rem;
+  }
+  .skill ul li a{
+    font-size:0.7rem;
+  }
+  .skill-table {
     display: inline-block;
     width: 41vh;
     grid-gap: 1.2rem;
+  }
+  .logo-python{
+    height: 1rem;
+    width: 4rem;
+  }
+  .logo-r{
+    height: 1rem;
+    width: 1rem;
+  }
+  .logo-postgresql{
+    height: 1rem;
+    width: 1rem;
+  }
+  .logo-js{
+    height: 1rem;
+    width: 4rem;
+  }
+
+  .logo-vba{
+    height: 1rem;
+    width: 1rem;
+  }
 }
+  
+  
