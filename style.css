@@ -783,7 +783,7 @@ input[name="file"] {
     font-size: 0.6rem;
   }
   .education-table .institution{
-    grid-template-columns: 6fr 9fr;
+    grid-template-columns: 6fr 10fr;
   }
   .left-table{
     padding:0.8rem;
