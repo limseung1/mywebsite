@@ -773,7 +773,9 @@ input[name="file"] {
   .education-table{
     width:43vh;
     font-size: 0.6rem;
-
+  }
+  .education-table .institution{
+    grid-template-columns: 3fr 4fr;
   }
   .left-table{
     padding:0.8rem;
@@ -799,20 +801,26 @@ input[name="file"] {
                           "b b"
                           "a a";
   }
-
+  .experience-table .institution .exp-style .d-flex{
+    display:inline-block!important;
+   
+  }
   .experience-table .institution p{
-    font-size:0.5rem;
+    font-size:0.6rem;
+    margin: 0.2rem 0;
   }
 
   .experience-table .institution .left-table{
     grid-area: a;
+    font-size:0.6rem;
   }
   .experience-table .institution .right-table{
     grid-area: b;
   }
 
   .li-bullet{
-    font-size: 0.7rem;
+    font-size: 0.6rem;
+    margin: 0.2rem 0.5rem;
   }
 
 
