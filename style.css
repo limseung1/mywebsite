@@ -333,14 +333,14 @@
     align-items: center;
     overflow: hidden;
     z-index:2;
-    padding-right:4rem;
-    padding-left:4rem;
   
   }
   .showcase .container .profile-picture img{
-    flex-shrink: 0;
+    /* flex-shrink: 0;
     min-width: 100%;
-    min-height: 100%
+    min-height: 100%; */
+    width: 100%;
+    height: auto;
   }
   
   .about{
