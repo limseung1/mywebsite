@@ -506,30 +506,7 @@
     margin-top: 2rem;
   }
   
-  
-  /* MEDIA QUERY */
-  /* ──────────────────────────────────────────────────────────────────────────────── */
-  
-  @media(max-width:1000px){
-    /* Media Query : NavBar */
-    .navbar .container .m-left, .m-right{
-      display: none;
-    }
-    .navbar .container {
-      display: flex;
-    }
-  }
-  @media(max-width:900px){
-    .showcase{
-      height: 800px;
-      font-size: 0.8rem;
-    }
-    .showcase .container {
-      grid-template-columns: 1fr !important;
-    }
-  }
-  
-  
+
   /* Education Card */
   .education-table {
     width: 50%;
@@ -768,3 +745,26 @@ input[name="file"] {
   font-size: 8pt;
 }
 
+  /* MEDIA QUERY */
+  /* ──────────────────────────────────────────────────────────────────────────────── */
+  
+  @media(max-width:1000px){
+    /* Media Query : NavBar */
+    .navbar .container .m-left, .m-right{
+      display: none;
+    }
+    .navbar .container {
+      display: flex;
+    }
+  }
+  @media(max-width:900px){
+    .showcase{
+      height: 800px;
+      font-size: 0.8rem;
+    }
+    .showcase .container {
+      grid-template-columns: 1fr !important;
+    }
+  }
+  
+  
