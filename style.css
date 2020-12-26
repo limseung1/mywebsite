@@ -861,6 +861,32 @@ input[name="file"] {
     height: 1rem;
     width: 1rem;
   }
+  /* Project */
+  .project{
+    height:  24vh;
+    padding: 1rem 1rem;
+    margin: 0.8rem 0;
+  }
+  .project-table{
+    display: inline-block;
+    width: 41vh;
+  }
+  .project-table h5{
+    font-size:0.9rem;
+  }
+  .project-table .project-intro p{
+    font-size:0.7rem;
+  }
+  .project-window{
+    height: 4rem;
+    width: 4rem;
+  }
+  .project-sum{
+    line-height:1.1rem;
+  }
+  .view-icon{
+    margin:1rem 0 0 0;
+  }
 }
   
   
