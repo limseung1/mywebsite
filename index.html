@@ -8,11 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Welcome to Seungwon Lim's Personal Website. You can read about my education and experience. 
         You can also contact me directly or via contact information specificed in this website.">
-
-    <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- Custom Style -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
         integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous" />
@@ -26,10 +23,10 @@
             <div class="menu logo">
                 <a href="index.html">SEUNGWON LIM</a>
             </div>
-            <ul class="menu m-right">
+            <!-- <ul class="menu m-right">
                 <li><a class="btn-EN language-select">ENG</a></li>
                 <li><a class="btn-KR" href="index_KR.html">한국어</a></li>
-            </ul>
+            </ul> -->
         </div>
     </nav>
 
@@ -70,18 +67,19 @@
     <section class="show-selection">
         <div class="container">
             <div class="border-line border-flash show">
-
                 <div class="select-educ hidden">
                     <div class="selection bg-educ">
-                        <div class="education-table">
-
+                        <div class="education-table">                    
                             <div class="institution">
                                 <div class="left-table">
                                     <h6>Sep 2014 - Dec 2020</h6>
                                     <h6>Vancouver, Canada</h6>
+                                    <button id="open-ui" class="btn btn-view">GPA</button>
                                 </div>
                                 <div class="right-table">
-                                    <h5>University of British Columbia</h5>
+                                    <div class="d-flex">
+                                        <h5 class="mr-auto">University of British Columbia</h5>
+                                    </div>
                                     <p>Bachelor of International Economics</p>
                                 </div>
                             </div>
@@ -107,12 +105,66 @@
                                     <p>Manitoba High School Education</p>
                                 </div>
                             </div>
-
                         </div>
+                        <!-- Chart -->
+                        <div class='chart-table container'>
+                            <!-- <button class="close-ui">X</button> -->
+                            <div class="ui">
+                                <!-- Header -->
+                                <div class="chart-header">
+                                    <div class="d-flex">
+                                        <h2 id="chart-title" class="mr-auto">Title</h2>
+                                        <!-- <i class="pt-1 fas fa-file-pdf" href=""></i> -->
+                                        <button class="close-ui">X</button>
+                                    </div>
+                                    <p id="chart-explanation">Explantion</p>                                    
+                                    <div class="d-flex mt-2">
+                                        <h5 id="chart-subtitle" class="mr-auto">Sub-title</h5>
+                                        <div id="sub-controls">
+                                            <div id="cum-yearly">
+                                                <button class='btn btn-line-cu' href="#" onclick="update_line(true)">Cumulative</button>
+                                                <button class='btn btn-line-yr' href="#" onclick="update_line(false)">Yearly</button>
+                                            </div>
+                                            <div id="college-years">
+                                                <button class='btn btn-sub-control' href="#" onclick="update_bar(1)">1st Year</button>
+                                                <button class='btn btn-sub-control' href="#" onclick="update_bar(2)">2nd Year</button>
+                                                <button class='btn btn-sub-control' href="#" onclick="update_bar(3)">3rd Year</button>
+                                                <button class='btn btn-sub-control' href="#" onclick="update_bar(4)">4th Year</button>  
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Plot -->
+                                <div id="chart-plot" class="container"> 
+                                    <canvas id="gradeChart"></canvas>
+                                </div>
+
+                                <!--    < Master-controls >   -->
+                                <div class="master-control-panel">
+
+                                    <!-- Carousel -->
+                                    <div class="carousel">
+                                        <div class="carousel-item carousel-item-visible">
+                                            <button id="by_gpa" class='btn' href="#">By Years</button>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <button id="by_class" class='btn' href="#">By Course</button>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <button id="by_strength" class='btn' href="#">By Descipline</button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Carousel control -->
+                                    <div class="carousel-control">
+                                        <button id="carousel-prev" arial-label="previous"><</button>
+                                        <button id="carousel-next" arial-label="next">></button>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>           
                     </div>
                 </div>
-
-
                 <div class="select-exp hidden">
                     <div class="selection bg-exp">
                         <div class="experience-table">
@@ -133,8 +185,7 @@
                                         <li>Awarded with Army Achievement Medal (AAM) for initiating automation of over 100 administrative actions in compliance to 8th Army regulation and 501st Military Intelligence Brigade inspection</li>
                                     </ul>
                                 </div>
-                            </div>
-                            <!--  -->
+                            </div> 
                             <div class="institution">
                                 <div class="left-table">
                                     <h6>Aug 2018 - Nov 2018</h6>
@@ -291,7 +342,7 @@
                     </div>
                 </div>
                 <!-- Contact Form -->
-                <div class="col-md-6">
+                <div class="message-box col-md-6">
                     <h4 class="mb-2">Message</h4>
 
                     <form class="form-wrapper" action="POST" data-netlify="true">
@@ -302,7 +353,6 @@
                         <div class="form-contact">
                             <input type="email" name="email" id="email" placeholder="E-mail" />
                             <!-- Choose file -->
-                            <!-- <input class="fileSelector" type="file" name="file" id="file" placeholder="Choose File" /> -->
                         </div>
                         <div class="form-message">
                             <textarea name="message" id="message" placeholder="Message"></textarea>
@@ -327,7 +377,15 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+
     <script src="app.js"></script>
+    <script src="chart-ui.js"></script>
+
     </body>
 
 </html>
+
+
+
+

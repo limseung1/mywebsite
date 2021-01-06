@@ -1,38 +1,38 @@
-course,grade,letter,session,term,year,credits,class_avg
-CPSC103,99,A+,2020W,1,4,3,81
-DSCI100,90,A+,2020W,1,4,3,80
-FREN101,90,A+,2020W,1,4,3,80
-PHIL220,91,A+,2020W,1,4,3,83
-ECON494,90,A+,2017W,2,4,3,81
-ECON456,82,A-,2017W,2,4,3,78
-CPSC100,82,A-,2017W,2,4,3,81
-COEC498,80,A-,2017W,2,4,3,78
-ECON493,88,A,2017W,1,4,3,77
-ECON455,77,B+,2017W,1,4,3,77
-ECON441,77,B+,2017W,1,4,3,78
-COEC377,76,B+,2017W,1,4,3,79
-COEC365,79,B+,2016W,1,3,3,80
-COEC370,74,B,2016W,1,3,3,76
-COEC371,70,B-,2016W,1,3,3,73
-COEC491,83,A-,2016W,1,3,3,80
-ECON370,77,B+,2016W,1,3,3,79
-ECON367,69,B-,2016W,2,3,3,74
-ECON447,80,A-,2016W,2,3,3,76
-RUSS207,79,B+,2016W,2,3,3,82
-ENGL110,73,B,2016S,1,2,3,69
-ECON308,74,B,2015W,1,2,6,75
-CHIN101,78,B+,2015W,1,2,3,75
-COEC293,79,B+,2015W,1,2,3,76
-ECON327,91,A+,2015W,1,2,3,78
-MATH221,67,C+,2015W,1,2,3,67
-ECON255,81,A-,2015W,2,2,3,83
-ECON309,72,B,2015W,2,2,3,78
-ECON328,76,B+,2015W,2,2,3,73
-PSYC102,50,D,2014W,2,1,3,71
-MATH105,68,B-,2014W,2,1,3,53
-ECON102,68,B-,2014W,2,1,3,74
-COMM126,64,C+,2014W,2,1,3,72
-WRDS150,72,B,2014W,1,1,3,70
-PSYC101,66,C+,2014W,1,1,3,71
-MATH104,69,B-,2014W,1,1,3,67
-ECON101,72,B,2014W,1,1,3,75
+course,grade,letter,session,term,year,credits,class_avg,faculty,description,
+CPSC103,99,A+,2020W,1,4,3,81,Computer Science,Computation as a tool for systematic problem solving in non-computer-science disciplines. Introductory programming skills.
+DSCI100,90,A+,2020W,1,4,3,79,Computer Science,Use of data science tools to summarize, visualize, and analyze data. Sensible workflows and clear interpretations are emphasized.
+FREN101,85,A+,2020W,1,4,3,80,Language and Literature,Basic vocabulary, the rudiments of grammar and familiarization with cultures of the French-speaking world.
+PHIL220,91,A+,2020W,1,4,3,83,Computer Science,Sentential and predicate logic. Translation from natural language; truth tables and interpretations; systems of natural deduction up to relational predicate logic with identity; alternative proof methods.
+ECON494,90,A+,2017W,2,4,3,81,Statistics,Focus on a particular aspect of applied international economics. Independent empirical research project required.
+ECON456,82,A-,2017W,2,4,3,78,Economics,Balance of payments; market for foreign exchange; mechanism for adjusting the balance of payments; internal vs. external stability; current problems and issues.
+CPSC100,82,A-,2017W,2,4,3,81,Computer Science,Meaning and impact of computational thinking. Solving problems using computational thinking, testing, debugging. How computers work. No prior computing experience required.
+COEC498,80,A-,2017W,2,4,3,78,Commerce,Development of general environmental framework for international business studies by drawing on international and development economics, research into government-business relations and studies in comparative socio-cultural systems and political systems.
+ECON493,88,A,2017W,1,4,3,77,Statistics,Econometric methodologies necessary to conduct applied research, including time series analysis and panel data methods; review of empirical work in international economics.
+ECON455,77,B+,2017W,1,4,3,77,Economics,International trade theory and policy in general equilibrium; relative costs, factor proportions, imperfect competition and the pattern of trade; efficiency and distribution.
+ECON441,77,B+,2017W,1,4,3,78,Economics,Industrialization of an agrarian economy; how the West grew rich; history of Japanese development; technical progress and growth; evolution of the patterns of income distribution; role of international trade in development; environment and development.
+COEC377,76,B+,2017W,1,4,3,79,Commerce,Structure, nature and institutions of foreign exchange markets, including spot, forward, futures, options, and offshore currency markets. Factors affecting exchange rates are also discussed.
+COEC365,79,B+,2016W,1,3,3,80,Commerce,The process of marketing research including problem/opportunity formulation, research objectives, data sources, research instrument design, sampling, data collection and processing and methods of data analysis.
+COEC370,74,B,2016W,1,3,3,76,Commerce,Corporate enterprise decisions including capital budgeting; capital structure choice; and financial policies, tools, and valuation.
+COEC371,70,B-,2016W,1,3,3,73,Commerce,Basic concepts of finance, including security valuation, security markets, and financial decisions concerning risk and return.
+COEC491,83,A-,2016W,1,3,3,80,Commerce,Concepts and processes for the strategic management of single- and multi-business unit private sector enterprises, analyzed using the case method. Integrates methodologies from economic and organizational theory to form the foundations for strategic analyses.
+ECON370,77,B+,2016W,1,3,3,79,Economics,Techniques and problems in benefit-cost analysis of public projects. Examination of alternative approaches to public decision-making such as cost-effectiveness analysis and multiple-objective frameworks. Case studies of projects in the areas of natural resources, the environment, human resources, public services, and transportation.
+ECON367,69,B-,2016W,2,3,3,74,Economics,The economics of market failure, equity and efficiency. Property rights, the economics of accident and contract law, economic theories of law enforcement.
+ECON447,80,A-,2016W,2,3,3,76,Economics,Theoretical analysis of economies that use money; the emergence of money; the roles of money in the economy; models of money demand; the optimal quantity of money seignorage and inflation; monetary policy and macroeconomic stability; monetary policy in an open economy.
+RUSS207,79,B+,2016W,2,3,3,82,Language and Literature,The writings, lives, and thought of major Russian authors.
+ENGL110,73,B,2016S,1,2,3,69,Language and Literature,Study of selected examples of poetry, fiction, and drama. Essays are required.
+ECON308,74,B,2015W,1,2,6,75,Economics,Mathematical and graphical models of individual, household, and firm behavior with applications to issues in international economics.
+CHIN101,78,B+,2015W,1,2,3,75,Language and Literature,Skills in listening, speaking, reading, and writing in Mandarin Chinese, an active vocabulary of about 250 Chinese words, and basic grammar.
+COEC293,79,B+,2015W,1,2,3,76,Commerce,Construction and interpretation of financial reports prepared primarily for external use.
+ECON327,91,A+,2015W,1,2,3,78,Statistics,Basic tools for the statistical analysis of economic data. Registration restricted to students in the Bachelor of International Economics Program.
+MATH221,67,C+,2015W,1,2,3,67,Mathematics,Systems of linear equations, operations on matrices, determinants, eigenvalues and eigenvectors, diagonalization of symmetric matrices.
+ECON255,81,A-,2015W,2,2,3,83,Economics,Social and economic implications for both rich and poor countries of lowered barriers to the international flows of information, capital, labour and goods.
+ECON309,72,B,2015W,2,2,3,78,Economics,The aggregate economy with emphasis on macroeconomic policy and international economic growth, money and inflation, unemployment, business cycles, and macroeconomic stabilization policy under fixed and flexible exchange rates.
+ECON328,76,B+,2015W,2,2,3,73,Statistics,Empirical tools used in applied research, with emphasis on the linear regression model. Registration restricted to students in the Bachelor of International Economics program.
+PSYC102,50,D,2014W,2,1,3,71,Psychology,Introduction to methods and statistics, motivation, assessment, developmental, personality, clinical, and social psychology.
+MATH105,68,B-,2014W,2,1,3,53,Mathematics,Antiderivatives, the definite integral, techniques of integration, infinite series, partial derivatives, maxima and minima with constraints, discrete and continuous random variables.
+ECON102,68,B-,2014W,2,1,3,74,Economics,Elements of theory and of Canadian policy and institutions concerning the economics of growth and business cycles, national income accounting, interest and exchange rates, money and banking, the balance of trade.
+COMM126,64,C+,2014W,2,1,3,72,Commerce,Use of data and statistics to convey information on important issues of the world economy.
+WRDS150,72,B,2014W,1,1,3,70,Language and Literature,Writing and reading in disciplines across the academy, focusing on practices that research disciplines share and those that differentiate them.
+PSYC101,66,C+,2014W,1,1,3,71,Psychology,Introduction to Methods and Statistics, Biopsychology, Learning, Perception, Memory, and Cognition.
+MATH104,69,B-,2014W,1,1,3,67,Mathematics,Derivatives and rates of change, exponential and trigonometric functions, Newton's method, Taylor polynomials, maxima and minima, and graphing.
+ECON101,72,B,2014W,1,1,3,75,Economics,Elements of theory and of Canadian policy and institutions concerning the economics of markets and market behaviour, prices and costs, exchange and trade, competition and monopoly, distribution of income.

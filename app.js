@@ -54,12 +54,14 @@ function addSelection() {
     this.classList.add("selected-bg");
     this.firstElementChild.classList.add("selected-text");
     this.lastElementChild.classList.add("selected-text");
+
+
 }
 
 // Slider Functions
 function slideopen(summaryContainer) {
     setBorder(0.15, "#0d77ce");
-    summaryContainer.style.height = `80vh`;
+    summaryContainer.style.height = `75vh`;
 }
 function slideclose(summaryContainer) {
     setBorder(0.15, "var(--primary-color");
@@ -121,37 +123,82 @@ function smoothScroll(target, duration) {
 }
 
 
+// Carousel
+let slide_count = 0;
+const slide_items = document.getElementsByClassName('carousel-item')
+const total_count = slide_items.length;
 
-// Function for FAQ
-const faqOpen = document.querySelectorAll(".btn-open");
-
-faqOpen.forEach(item => {
-    item.addEventListener("click", e => {
-        for (let child of e.target.parentElement.parentElement.children) {
-            if (child.lastElementChild.classList.contains("open")) {
-                if (child.lastElementChild === e.target.nextSibling.nextSibling) {
-                    break;
-                }
-                console.log("Commit 1");
-                child.lastElementChild.classList.replace("open", "close");
-                child.firstElementChild.firstElementChild.classList.replace(
-                    "fa-times",
-                    "fa-plus"
-                );
-            }
-        }
-
-        if (e.target.nextSibling.nextSibling.classList.contains("open")) {
-            console.log("Close");
-
-            e.target.nextSibling.nextSibling.classList.replace("open", "close");
-            e.target.firstElementChild.classList.replace("fa-times", "fa-plus");
-        } else {
-            console.log("Open");
-            e.target.nextSibling.nextSibling.classList.replace("close", "open");
-            e.target.firstElementChild.classList.replace("fa-plus", "fa-times");
-        }
-        console.log("clear");
-        e.preventDefault();
-    });
+document.getElementById('carousel-prev').addEventListener("click", function() {
+    move_to_prev_slide();
 });
+
+document.getElementById('carousel-next').addEventListener("click", function() {
+    move_to_next_slide();
+});
+
+function move_to_prev_slide() {
+    
+    if (slide_count === 0) {
+        slide_count = total_count - 1;
+    } else {
+        slide_count--;
+    }
+    update_slide();
+    update_chart();
+}
+function move_to_next_slide() {
+    if (slide_count === total_count - 1) {
+        slide_count = 0;
+    } else {
+        slide_count++;
+    }
+    update_slide();
+    update_chart()
+};
+
+function update_slide() {
+    for (item of slide_items){
+        item.classList.add('carousel-item-hide');
+        item.classList.remove('carousel-item-visible')
+    };
+
+    slide_items[slide_count].classList.add('carousel-item-visible');
+};
+
+
+
+
+// Plot updated chart <- modify these
+
+function update_chart() {
+    if (slide_count === 0){
+        update_header_sub_control(
+            "Performance over Years",
+            "Cumulative averages show sucessive grades over the entire academic years. Yearly averages show a grade received in a single academic year.",
+            "Final Average: 77%",
+            "cum-yearly"
+            );
+        plot_line_all();
+
+    } else if (slide_count === 1) {
+        update_header_sub_control(
+            "Performance by Course",
+            "The chart shows the final grades received in each course, and its description when hovered on each bin.",
+            "",
+            "college-years"
+            );
+        plot_bar_average();
+
+    } else if (slide_count === 2) {
+        update_header_sub_control(
+            "Performance by Descipline",
+            "The chart shows average grades received in seven disciplines of study.",
+            "",
+            ""
+            );
+        plot_radar();
+    }
+}
+
+
+
