@@ -1,0 +1,36 @@
+{
+ "kind": "youtube#videoCategoryListResponse",
+ "etag": "\"ld9biNPKjAjgjV7EZ4EKeEGrhao/1v2mrzYSYG6onNLt2qTj13hkQZk\"",
+ "items": [
+  {
+   "kind": "youtube#videoCategory",
+   "etag": "\"ld9biNPKjAjgjV7EZ4EKeEGrhao/Xy1mB4_yLrHy_BmKmPBggty2mZQ\"",
+   "id": "1",
+   "snippet": {
+    "channelId": "UCBR8-60-B28hp2BmDPdntcQ",
+    "title": "Film & Animation",
+    "assignable": true
+   }
+  },
+  {
+   "kind": "youtube#videoCategory",
+   "etag": "\"ld9biNPKjAjgjV7EZ4EKeEGrhao/nqRIq97-xe5XRZTxbknKFVe5Lmg\"",
+   "id": "10",
+   "snippet": {
+    "channelId": "UCBR8-60-B28hp2BmDPdntcQ",
+    "title": "Music",
+    "assignable": true
+   }
+  },
+  {
+   "kind": "youtube#videoCategory",
+   "etag": "\"ld9biNPKjAjgjV7EZ4EKeEGrhao/9GQMSRjrZdHeb1OEM1XVQ9zbGec\"",
+   "id": "17",
+   "snippet": {
+    "channelId": "UCBR8-60-B28hp2BmDPdntcQ",
+    "title": "Sports",
+    "assignable": true
+   }
+  }
+ ]
+}
