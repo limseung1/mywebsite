@@ -2,8 +2,8 @@
 
 // Main Functions
 async function plot_line_all(){
-    const logd = await read();
-    glob_logd = logd;
+    glob_logd= await read();
+    const logd = glob_logd;
 
     const x = unique(get_field(logd, "year")).sort()
     const y1 = cumulative_average(logd, x);
@@ -20,7 +20,7 @@ async function plot_line_all(){
 }
 
 async function plot_bar_average(){
-    const logd = await read();
+    const logd = glob_logd;
 
     const x =  get_field(logd, "code").reverse();
 
@@ -37,7 +37,7 @@ async function plot_bar_average(){
 }
 
 async function plot_radar(){
-    const logd = await read();
+    const logd = glob_logd;
     const x = unique(get_field(logd,"faculty")).sort();
     const y1 = get_average_by_faculty(logd, x);
 
@@ -56,7 +56,7 @@ function switch_line_method(class_name, bg_color, text_color) {
 
 // Update chart functions
 async function update_line(is_cumulative) {
-    const logd = await read();
+    const logd = glob_logd;
     const x = unique(get_field(logd, "year")).sort();
 
     if (is_cumulative) {
@@ -114,7 +114,7 @@ function addData_line(is_cumulative,logs) {
 
 
 async function update_bar(year) {
-    const logd = await read();
+    const logd = glob_logd;
     const lol =  get_field(logd, "code");
     const logs = [get_field(logd, "grade"), get_field(logd, "class_avg")];
 
