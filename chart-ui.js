@@ -193,7 +193,8 @@ function renew_chart() {
         window.chart.destroy()
     }
 }
-read()
+
+// read()
 // Read Function
 async function read() {
     // read csv file in fixed path, create gd object with its fields code, grade, letter, session, term, year class_avg fields
@@ -581,6 +582,7 @@ document.getElementById("open-ui").addEventListener("click", e => {
         "Final Average: 77%",
         "cum-yearly"
         );
+
     plot_line_all();
     
 e.preventDefault();
