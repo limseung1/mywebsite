@@ -509,7 +509,7 @@
 
   /* Education Card */
   .education-table {
-    max-width: 800px;
+    max-width: 80vw;
     justify-self: center;
   }
   .institution {
@@ -550,6 +550,7 @@
  .experience-table {
   max-width: 1000px;
   justify-self: center;
+  position:relative;
 }
 .exp-style {
   font-size: 0.9rem;
@@ -878,6 +879,131 @@ box-shadow: none;
 }
 
 
+  
+/* Carousel */
+
+.master-control-panel {
+  width: 100%;
+  margin-top:1rem;   /* adjust this */
+}
+.carousel{
+  overflow: hidden;
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+}
+
+.carousel .carousel-item,
+.carousel .carousel-item-hide {
+  display: none;
+}
+
+.carousel .carousel-item button{
+  height: auto;
+  color:#ffffff;
+  font-size: 1rem;
+  background-color: #111111;
+}
+
+.carousel .carousel-item-visible {
+  display: block;
+  animation: fadeVisibility 0.5s;
+}
+
+@keyframes fadeVisibility {
+  0% {
+    opacity: 0;
+  };
+  100% {
+    opacity: 1;
+    transform: opacity linear;
+  };
+}
+
+
+.carousel-control{
+  display: flex;
+  justify-content: space-between;
+  top: 50%;
+  margin-top: 0.2rem;
+}
+
+.carousel-control button {
+  border: 0;
+  border-radius: 50px;
+  color: #292929;
+  background-color: #ffffff;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Get ride of margin left and right when in mobile view */
+.carousel-control button#carousel-prev {
+  /* margin-left:15rem; */
+}
+.carousel-control button#carousel-next {
+  /* margin-right:15rem; */
+}
+
+
+
+/* Slider */
+
+/* Slide Subjects */
+.slider-item,
+.slider-item-hide {
+  display: none;
+}
+.slider-item-visible {
+  display: block;
+  animation: fadeVisibility 0.5s;
+}
+
+@keyframes fadeVisibility {
+  0% {
+    opacity: 0;
+  };
+  100% {
+    opacity: 1;
+    transform: opacity linear;
+  };
+}
+
+
+/* Slide Control */
+.slider-control{
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width:110%;
+  top: 50%;
+  transform: translateY(-50%);
+  left:-5%;
+}
+
+.slider-control i{
+  border: 0;
+  color: #f4f4f4;
+  font-weight: bold;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.slide-nav-container{
+  width:100%;
+  position: absolute;
+  top:100%;
+  left:50%;
+  transform:translate(-50%, -10%)
+}
+
+.slide-nav {
+  display: inline-block;
+  width: 10%;
+  height: 0.2rem;
+  background-color: rgba(255,255,255,0.4);
+}
 
 /* MEDIA QUERY */
 /* ──────────────────────────────────────────────────────────────────────────────── */
@@ -945,7 +1071,7 @@ box-shadow: none;
 
   /* Experience */
   .experience-table{
-    width:43vh;
+    width:80vw;
     font-size: 0.6rem;
   }
   .experience-table .institution{
@@ -965,6 +1091,7 @@ box-shadow: none;
   .experience-table .institution .left-table{
     grid-area: a;
     font-size:0.6rem;
+    border-left:none;
   }
   .experience-table .institution .right-table{
     grid-area: b;
@@ -973,6 +1100,13 @@ box-shadow: none;
   .li-bullet{
     font-size: 0.6rem;
     margin: 0.2rem 0.5rem;
+  }
+
+  .slider-control{
+    width:90%!important;
+    top: 80%;
+    transform: translateY(0%);
+    left:5%;
   }
 
 
@@ -1047,70 +1181,4 @@ box-shadow: none;
   .view-icon{
     margin:1rem 0 0 0;
   }
-}
-  
-/* Carousel */
-
-.master-control-panel {
-  width: 100%;
-  margin-top:1rem;   /* adjust this */
-}
-.carousel{
-  overflow: hidden;
-  position: absolute;
-  left:50%;
-  transform: translateX(-50%);
-}
-
-.carousel .carousel-item,
-.carousel .carousel-item-hide {
-  display: none;
-}
-
-.carousel .carousel-item button{
-  height: auto;
-  color:#ffffff;
-  font-size: 1rem;
-  background-color: #111111;
-}
-
-.carousel .carousel-item-visible {
-  display: block;
-  animation: fadeVisibility 0.5s;
-}
-
-@keyframes fadeVisibility {
-  0% {
-    opacity: 0;
-  };
-  100% {
-    opacity: 1;
-    transform: opacity linear;
-  };
-}
-
-
-.carousel-control{
-  display: flex;
-  justify-content: space-between;
-  top: 50%;
-  margin-top: 0.2rem;
-}
-
-.carousel-control button {
-  border: 0;
-  border-radius: 50px;
-  color: #292929;
-  background-color: #ffffff;
-  font-weight: bold;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-/* Get ride of margin left and right when in mobile view */
-.carousel-control button#carousel-prev {
-  /* margin-left:15rem; */
-}
-.carousel-control button#carousel-next {
-  /* margin-right:15rem; */
 }
