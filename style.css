@@ -1208,11 +1208,16 @@ box-shadow: none;
     padding: 0.8rem 0.5rem;
   }
 
+  .bg-certs{
+    position:relative;
+  }
   
   .project-container{
+    position:absolute;
+    top:20%;
     overflow-y: scroll;
-    /* margin:0 auto; */
-    max-width:100%;
+    margin:0;
+    width:100%;
     height:50%;
 
   }
