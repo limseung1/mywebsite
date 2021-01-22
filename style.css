@@ -49,17 +49,6 @@
   }
   /* Utility */
   /* ──────────────────────────────────────────────────────────────────────────────── */
-  .scrollGradient {
-    background: 
-      linear-gradient(#343233 33%, rgba(52,50,51, 0)),
-      linear-gradient(rgba(52,50,51, 0), #343233 66%) 0 100%,
-      radial-gradient(farthest-side at 50% 0, rgba(242,242,242, 0.5), rgba(0,0,0,0)),
-      radial-gradient(farthest-side at 50% 100%, rgba(242,242,242, 0.5), rgba(0,0,0,0)) 0 100%;
-    background-color: rbga(0,0,0,1);
-    background-repeat: no-repeat;
-    background-attachment: local, local, scroll, scroll;
-    background-size: 100% 105px, 100% 105px, 100% 35px, 100% 35px;
-  }
   .appear-bar{
     position: absolute;
     top:100%;
@@ -622,62 +611,6 @@
 }
 
 
-/* SKill: Horizontal Slide */
-
-.h-slider-container{
-  height:30%;
-  background:rgba(15, 15, 15, 0.699);
-}
-
-.h-slider-container .slider-title{
-  font-size:3.5vw;
-  color:rgb(93, 179, 250);
-  font-weight: 600;
-  margin:0;
-  height:30%;
-  background:rgba(60, 60, 60, 0.88);
-}
-.h-slider{
-  overflow-x: scroll;
-  display:flex;
-  height:70%;
-  width:100%;
-  border-bottom: 0.4rem solid rgb(50, 50, 50);
-}
-
-.h-slider .slide{
-  background-color:rgba(24, 24, 24, 0.911);
-  min-width:30%;
-  height: 100%;
-  border: 1.5px solid rgba(75, 75, 75, 0.897);
-}
-
-.h-slider .slide .slide-top {
-  position: relative;
-  height: 50%;
-  width: 100%;
-  background:#f4f4f4
-}
-.h-slider .slide .slide-top img{
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform: translate(-50%, -50%);
-  height:4vh;
-  width:4vh;
-}
-
-.h-slider .slide p{
-  font-weight: 500;
-  color:#b1b0b0;
-  font-size:3vw;
-  margin:0;
-  height:50%;
-  width: 100%;
-  text-align: center;
-  line-height: 1;
-}
-
 /* Projects */
 
 .project-container{
@@ -687,6 +620,7 @@
   margin:auto auto;
 
 }
+
 
 .project-table{
   margin:auto auto;
@@ -718,7 +652,7 @@
 }
 
 #p-a{
-  background-image: url("img/youtube1.png");
+  background-image: url("img/youtube.png");
 }
 #p-b{
   background-image: url("img/ge.png");
@@ -1220,7 +1154,6 @@ box-shadow: none;
 
 
   /* Software Skills */
-  
   .skill{
     height:8rem;
     padding: 1rem 1rem;
@@ -1239,11 +1172,10 @@ box-shadow: none;
   .skill ul li a{
     font-size:0.7rem;
   }
-
   .skill-table {
     display: inline-block;
-    height: 60vh;
-    width: 100vw;
+    width: 41vh;
+    grid-gap: 1.2rem;
   }
   .logo-python{
     height: 1rem;
@@ -1266,11 +1198,10 @@ box-shadow: none;
     height: 1rem;
     width: 1rem;
   }
-
-
   /* Project */
   .project-table{
     max-width:300px;
+
   }
 
   .project-sum{
