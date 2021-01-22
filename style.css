@@ -648,9 +648,8 @@
 .h-slider .slide{
   background-color:rgba(24, 24, 24, 0.911);
   min-width:30%;
-  height: 10vh;
+  height: 100%;
   border: 0.1px solid rgba(60, 60, 60, 0.88);
-  margin:1vh 0;
 }
 
 .h-slider .slide .slide-top {
