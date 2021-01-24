@@ -20,8 +20,13 @@ h_slide_triggers.forEach((slide, idx)=>{
             
         })
 
+
+        // Remove display animation
+        h_slide_contents.forEach((content) =>{
+            content.classList.remove("skill-animation")
+        })
+
         // Display Specific slide content
-        h_slide_contents[idx].classList.remove("skill-animation")
         h_slide_contents[idx].classList.remove("d-none")
         h_slide_contents[idx].classList.remove("d-sm-block")
         h_slide_contents[idx].classList.add("skill-animation")
