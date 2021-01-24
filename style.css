@@ -1218,6 +1218,7 @@ box-shadow: none;
   }
 
   .skill-animation{
+    display: block;
     animation: fadeVisibility 0.5s;
   }
 
