@@ -17,11 +17,12 @@ h_slide_triggers.forEach((slide, idx)=>{
         h_slide_contents.forEach((content) => {
             content.classList.add("d-none");
             content.classList.add("d-sm-block");
-            content.classList.add("skill-animation");
+            
         })
 
         // Display Specific slide content
         h_slide_contents[idx].classList.remove("d-none")
         h_slide_contents[idx].classList.remove("d-sm-block")
+        h_slide_contents[idx].classList.add("skill-animation")
     })
 })
