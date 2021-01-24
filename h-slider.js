@@ -8,8 +8,10 @@ h_slide_triggers.forEach((slide, idx)=>{
 
         // Slide Button Click Effect
         h_slide_triggers.forEach((slide)=>{
-            slide.style["animation"] = "fadeVisibility 0.5s;"
+            
         });
+
+        slide.style.background = ""
 
         // Hide all slide contents
         h_slide_contents.forEach((content) => {
