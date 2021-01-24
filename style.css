@@ -1218,10 +1218,10 @@ box-shadow: none;
   }
 
   ::-webkit-scrollbar {
-     /* Remove scrollbar space */
     width: 0px; 
     height: 0px;
-    /* background: transparent;  */
+    background: transparent; 
+    opacity:0;
 }
 
   .slide{
