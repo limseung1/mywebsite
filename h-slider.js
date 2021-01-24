@@ -11,8 +11,8 @@ h_slide_triggers.forEach((slide, idx)=>{
             slide.style["box-shadow"] = "none"
         });
 
-        slide.style["box-shadow"]="0px 0px 7px 0px white"
-        slide.style["transition"]="0.4s"
+        slide.style["box-shadow"]="0px 0px 5px 0px white"
+        slide.style["transition"]="0.3s"
 
         // Hide all slide contents
         h_slide_contents.forEach((content) => {
