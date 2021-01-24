@@ -8,20 +8,17 @@ h_slide_triggers.forEach((slide, idx)=>{
 
         // Slide Button Click Effect
         h_slide_triggers.forEach((slide)=>{
-            slide.style["box-shadow"] = "none"
+            slide.style["animation"] = "fadeVisibility 0.5s;"
         });
-
-        slide.style["box-shadow"]="0px 0px 5px 0px white"
-        slide.style["transition"]="0.3s"
 
         // Hide all slide contents
         h_slide_contents.forEach((content) => {
             content.classList.add("d-none");
             content.classList.add("d-sm-block");
-            
         })
 
         // Display Specific slide content
+        
         h_slide_contents[idx].classList.remove("d-none")
         h_slide_contents[idx].classList.remove("d-sm-block")
     })
