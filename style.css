@@ -9,7 +9,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    user-select: none;
   }
   
   body {
@@ -47,6 +46,12 @@
   button{
     outline:none !important;
   }
+  .show-selection .container .border-line {
+    overflow-y: scroll !important;
+}
+.text-secondary{
+  color:rgb(60, 110, 151) !important;
+}
   /* Utility */
   /* ──────────────────────────────────────────────────────────────────────────────── */
   .scrollGradient {
@@ -167,10 +172,10 @@
   }
 
 
-  .li-bullet{
-    list-style: circle;
-    margin: 0.2rem 0;
+  .li-square{
+    list-style: square;
     text-align: left;
+    font-size:80%;
   }
   
   /* Navigator*/
@@ -305,15 +310,15 @@
   }
 
   .bg-exp{
-      background:center center no-repeat url("img/Experience.jpg");
+      background:center center no-repeat url("https://images.unsplash.com/photo-1593106410288-caf65eca7c9d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2700&q=80");
       background-size: cover;
-      box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+      box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
   }
   
   .bg-tech{
       background:center center no-repeat url("https://images.unsplash.com/photo-1573219925012-6c5e60dbe3ce?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
       background-size: cover;
-      box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+      box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
   }
   
   .bg-certs{
@@ -520,7 +525,7 @@
 
   /* Education Card */
   .education-table {
-    max-width: 80vw;
+    max-width: 90vw;
     justify-self: center;
   }
   .institution {
@@ -532,15 +537,18 @@
   }
 
   .right-table h5{
-    font-size: 1rem;
+    /* font-size: 1rem; */
+    font-size: 100%;
   }
 
   .right-table p{
-    font-size: 0.9rem;
+    /* font-size: 0.9rem; */
+    font-size: 70%;
   }
   
   .left-table h6{
-    font-size: 0.8rem;
+    /* font-size: 0.8rem; */
+    font-size: 70%;
   }
   
   .left-table {
@@ -559,19 +567,16 @@
 
 /* Work Experience Card */
  .experience-table {
-  max-width: 1000px;
+  max-width: 920px;
   justify-self: center;
   position:relative;
-}
-.exp-style {
-  font-size: 0.9rem;
 }
 .experience-table .institution{
   grid-template-columns: 1.5fr 5fr;
 }
 
 .experience-table .institution p{
-  margin: 0.5rem;
+  /* margin: 0.5rem; */
 }
 
 
@@ -603,6 +608,7 @@
   border-bottom: dotted 1px #464545;
   font-size:0.8rem;
 }
+
 /* SKill: Horizontal Slide */
 .h-slider-container{
   display:none;
@@ -1009,39 +1015,6 @@ box-shadow: none;
   cursor: pointer;
 }
 
-/* Get ride of margin left and right when in mobile view */
-.carousel-control button#carousel-prev {
-  /* margin-left:15rem; */
-}
-.carousel-control button#carousel-next {
-  /* margin-right:15rem; */
-}
-
-
-
-/* Slider */
-
-/* Slide Subjects */
-.slider-item,
-.slider-item-hide {
-  display: none;
-}
-.slider-item-visible {
-  display: block;
-  animation: fadeVisibility 0.5s;
-}
-
-@keyframes fadeVisibility {
-  0% {
-    opacity: 0;
-  };
-  100% {
-    opacity: 1;
-    transform: opacity linear;
-  };
-}
-
-
 /* Slide Control */
 .slider-control{
   position: absolute;
@@ -1074,7 +1047,6 @@ box-shadow: none;
   display: inline-block;
   width: 10%;
   height: 0.2rem;
-  /* background-color: rgba(255,255,255,0.4); */
 }
 
 /* MEDIA QUERY */
@@ -1089,9 +1061,6 @@ box-shadow: none;
   }
 
 @media(max-width:1100px){
-  .show-selection .container .border-line {
-    overflow-y: scroll;
-}
   .navbar .container .m-left, .m-right{
     display: none;
   }
@@ -1119,9 +1088,6 @@ box-shadow: none;
 }
 
 @media(max-width:600px){
-  .show-selection .container .border-line {
-    overflow-y: scroll;
-}
   #intro .container .card-dark h2{
     font-size: 1.2rem
   }
@@ -1158,10 +1124,21 @@ box-shadow: none;
   }
 
 
+
   /* Experience */
+  .experience-table .left-table h6{
+    font-size:70%;
+  }
+
+  .experience-table h5{
+    font-size: 100%;
+  }
+  .experience-table .exp-style p{
+    font-size: 80%;
+  }
   .experience-table{
-    width:80vw;
-    font-size: 0.6rem;
+    width:85vw;
+
   }
   .experience-table .institution{
     grid-template-areas: "b b"
@@ -1172,23 +1149,13 @@ box-shadow: none;
     display:inline-block!important;
    
   }
-  .experience-table .institution p{
-    font-size:0.6rem;
-    margin: 0.2rem 0;
-  }
 
   .experience-table .institution .left-table{
     grid-area: a;
-    font-size:0.6rem;
     border-left:none;
   }
   .experience-table .institution .right-table{
     grid-area: b;
-  }
-
-  .li-bullet{
-    font-size: 0.6rem;
-    margin: 0.2rem 0.5rem;
   }
 
   .slider-control{
@@ -1201,8 +1168,7 @@ box-shadow: none;
   .slide-nav-container {
     width: 100%;
     position: absolute;
-    top: 104%;
-    /* left: 0%; */
+    top: 100%;
   }
 
 
@@ -1222,13 +1188,6 @@ box-shadow: none;
     max-width:100vw;
     height:100%;
   }
-
-  /* ::-webkit-scrollbar {
-    width: 0px; 
-    height: 0px;
-    background: transparent; 
-    opacity:0;
-} */
 
   .slide{
     position: relative;
@@ -1277,7 +1236,7 @@ box-shadow: none;
     padding: 0.8rem 0.5rem;
   }
 
-  .bg-certs{
+  .selection{
     position:relative;
   }
   

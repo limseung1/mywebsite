@@ -1,7 +1,7 @@
 course,grade,letter,session,term,year,credits,class_avg,faculty,description,
 CPSC103,99,A+,2020W,1,4,3,81,Computer Science,Computation as a tool for systematic problem solving in non-computer-science disciplines. Introductory programming skills.
 DSCI100,90,A+,2020W,1,4,3,79,Computer Science,Use of data science tools to summarize, visualize, and analyze data. Sensible workflows and clear interpretations are emphasized.
-FREN101,87,A,2020W,1,4,3,87,Language and Literature,Basic vocabulary, the rudiments of grammar and familiarization with cultures of the French-speaking world.
+FREN101,87,A,2020W,1,4,3,86,Language and Literature,Basic vocabulary, the rudiments of grammar and familiarization with cultures of the French-speaking world.
 PHIL220,91,A+,2020W,1,4,3,83,Computer Science,Sentential and predicate logic. Translation from natural language; truth tables and interpretations; systems of natural deduction up to relational predicate logic with identity; alternative proof methods.
 ECON494,90,A+,2017W,2,4,3,81,Statistics,Focus on a particular aspect of applied international economics. Independent empirical research project required.
 ECON456,82,A-,2017W,2,4,3,78,Economics,Balance of payments; market for foreign exchange; mechanism for adjusting the balance of payments; internal vs. external stability; current problems and issues.

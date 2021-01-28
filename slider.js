@@ -4,6 +4,7 @@ const slider_items = document.getElementsByClassName('slider-item');
 const slider_navs = document.getElementsByClassName('slide-nav');
 const slide_counter = slider_items.length;
 
+
 document.getElementById('slide-prev').addEventListener("click", function() {
     move_to_prev();
 });

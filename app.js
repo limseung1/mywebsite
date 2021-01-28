@@ -202,3 +202,30 @@ function update_chart() {
 
 
 
+// Change Background
+
+let bg = document.querySelector(".border-flash")
+
+document.querySelector(".educ").addEventListener("click", e => {
+    remove_bg_all()
+    bg.classList.add("bg-educ")
+})
+document.querySelector(".exp").addEventListener("click", e => {
+    remove_bg_all()
+    bg.classList.add("bg-exp")
+})
+document.querySelector(".tech").addEventListener("click", e => {
+    remove_bg_all()
+    bg.classList.add("bg-tech")
+})
+document.querySelector(".certs").addEventListener("click", e => {
+    remove_bg_all()
+    bg.classList.add("bg-certs")
+})
+
+function remove_bg_all(){
+    document.querySelector(".border-flash").classList.remove("bg-educ")
+    document.querySelector(".border-flash").classList.remove("bg-exp")
+    document.querySelector(".border-flash").classList.remove("bg-tech")
+    document.querySelector(".border-flash").classList.remove("bg-certs")
+}
