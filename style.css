@@ -580,12 +580,10 @@
 }
 
 
-
-
 /* Skill Table */
 .skill-table{
   max-width: 100vw;
-  max-height: 75vh;
+  max-height: 78vh;
   margin:auto;
 }
 
@@ -718,6 +716,9 @@
 }
 #p-c{
   background-image: url("img/research.png");
+}
+#p-d{
+  background-image: url("img/colter.png");
 }
 
 .project-sum{
